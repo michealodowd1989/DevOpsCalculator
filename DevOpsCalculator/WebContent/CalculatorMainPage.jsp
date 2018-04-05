@@ -35,7 +35,6 @@
 					<td></td>
 					<td><input type="submit" value="Calculate"></td>
 				</tr>
-				
 			</table>
 		</form>
 </body>

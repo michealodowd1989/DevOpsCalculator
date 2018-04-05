@@ -8,5 +8,35 @@
 </head>
 <body>
 <h1>Welcome to my DevOps Calculator</h1>
+<form method="post" action="Calculate">
+			<table>
+				<tr>
+					<td>Number1 :</td>
+					<td><input type="text" name="num1"></td>
+				</tr>
+				<tr>
+					<td>Number 2:</td>
+					<td><input type="text" name="num2"></td>
+				</tr>
+				<tr>
+					<td>Select</td>
+					<td><select name="select">
+							<option  value="add">Add</option>
+							<option value="subtract">subtract</option>
+							<option value="divide">Divide</option>
+							<option value="multiply">Multiply</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" name="answer"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Calculate"></td>
+				</tr>
+				
+			</table>
+		</form>
 </body>
 </html>

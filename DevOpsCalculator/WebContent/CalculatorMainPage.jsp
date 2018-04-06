@@ -31,10 +31,7 @@
 							<option value="multiply">Multiply</option>
 					</select></td>
 				</tr>
-				<tr>
-					<td></td>
-					<td><input type="text" name="answer"></td>
-				</tr>
+				
 				<tr>
 					<td></td>
 					<td><input type="submit" value="Calculate"></td>

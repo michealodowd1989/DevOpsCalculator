@@ -77,7 +77,7 @@ public class CalculatorServlet extends HttpServlet {
 	}
 
 	public float multiplyNumbers(float number1, float number2) {
-		return number1 - number2;
+		return number1 * number2;
 	}
 
 	public float divideNumbers(float number1, float number2) {

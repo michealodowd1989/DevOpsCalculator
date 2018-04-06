@@ -12,7 +12,7 @@
 		<h1>Welcome to my Devops Calculator</h1>
 	</div>
 	<div class="calculator">
-		<form method="post" action="Calculate">
+		<form method="post" action="CalculatorServlet">
 			<table>
 				<tr>
 					<td>Number1 :</td>
@@ -36,7 +36,6 @@
 					<td></td>
 					<td><input type="submit" value="Calculate"></td>
 				</tr>
-				
 			</table>
 		</form>
 	</div>

@@ -15,7 +15,7 @@
 		<form method="post" action="CalculatorServlet">
 			<table>
 				<tr>
-					<td>Number1 :</td>
+					<td>Number 1:</td>
 					<td><input type="text" name="num1"></td>
 				</tr>
 				<tr>
@@ -31,13 +31,18 @@
 							<option value="multiply">Multiply</option>
 					</select></td>
 				</tr>
-				
+				<tr>
+					<td>Result: </td>
+					<td>
+					</td>
+				</tr>
 				<tr>
 					<td></td>
 					<td><input type="submit" value="Calculate"></td>
 				</tr>
 			</table>
 		</form>
+		
 	</div>
 </body>
 </html>

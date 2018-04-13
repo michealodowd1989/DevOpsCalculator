@@ -1,10 +1,11 @@
-package com.main.servlet;
+package com.test.servletTest;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.Test;
+
+import com.main.servlet.CalculatorServlet;
 
 
 public class ServletTestCalculator {
@@ -21,7 +22,7 @@ public class ServletTestCalculator {
 	@Test
 	public void testing_positive_numbers_AddMethod() {
 		CalculatorServlet cal = new CalculatorServlet();
-		float result = cal.addNumbers(1, 1);
+		float result = cal.addNumbers(4, 1);
 		
 		assertEquals(2, result);
 	}

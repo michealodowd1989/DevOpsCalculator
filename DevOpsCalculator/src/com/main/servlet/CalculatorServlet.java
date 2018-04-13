@@ -1,3 +1,4 @@
+package com.main.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -30,9 +31,7 @@ public class CalculatorServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		
-		
+			
 	}
 	
 	
@@ -55,16 +54,20 @@ public class CalculatorServlet extends HttpServlet {
 		String calculationType = request.getParameter("select");
 
 		if (calculationType.equals("add")) {
-			out.print("Result: " + addNumbers(number1, number2));
+			request.setAttribute("name", addNumbers(number1, number2));
+			request.getRequestDispatcher("CalculatorMainPage.jsp").forward(request, response);
 
 		} else if (calculationType.equals("subtract")) {
-			out.print("Result: " + subtractNumbers(number1, number2));
+			request.setAttribute("name", subtractNumbers(number1, number2));
+			request.getRequestDispatcher("CalculatorMainPage.jsp").forward(request, response);
 
 		} else if (calculationType.equals("multiply")) {
-			out.print("Result: " + multiplyNumbers(number1, number2));
+			request.setAttribute("name", multiplyNumbers(number1, number2));
+			request.getRequestDispatcher("CalculatorMainPage.jsp").forward(request, response);
 			
 		} else if (calculationType.equals("divide")) {
-			out.print("Result: " + divideNumbers(number1, number2));
+			request.setAttribute("name", divideNumbers(number1, number2));
+			request.getRequestDispatcher("CalculatorMainPage.jsp").forward(request, response);
 		}
 	}
 

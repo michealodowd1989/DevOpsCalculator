@@ -33,8 +33,9 @@
 				</tr>
 				<tr>
 					<td>Result: </td>
-					<td>
-					</td>
+					
+					<td>${name}</td>
+					
 				</tr>
 				<tr>
 					<td></td>

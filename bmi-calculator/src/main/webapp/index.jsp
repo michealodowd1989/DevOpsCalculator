@@ -6,7 +6,7 @@
 		<%=java.lang.System.getProperty("user.name")%></h3>
 		<form action="results.jsp" method="get">
 			Height in meters<input type="text" name="height">
-			<br>
+			<br> 
 			Weight in kgs<input type="text" name="weight">
 			<br>
 			<input type="submit">

@@ -28,7 +28,7 @@ public class BmiCalculatorTest {
 		BmiProp bmiProp = bmiCalculator.createBmiProp("isuru", "64");	 
 	}
 	
-	@Test
+	@Test 
 	public void testCalculate1() throws InvalidBmiPropException {
 		BmiProp bmiProp = new BmiProp(1.7f, 64f);
 		float bmi = bmiCalculator.calculate(bmiProp);

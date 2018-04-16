@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import cse.maven.sample.exception.InvalidBmiPropException;
 import static org.testng.Assert.assertEquals;
 
+import org.apache.maven.plugin.surefire.log.api.NullConsoleLogger;
+
 @Test
 public class BmiCalculatorTest {
 
@@ -13,7 +15,7 @@ public class BmiCalculatorTest {
 	@BeforeClass
 	public void setUp() {
 		bmiCalculator = new BmiCalculator();
-	}
+	} 
 	
 	@Test
 	public void createBmiTest1() throws InvalidBmiPropException {
@@ -36,6 +38,12 @@ public class BmiCalculatorTest {
 	@Test(expectedExceptions = InvalidBmiPropException.class)
 	public void testCalculate2() throws InvalidBmiPropException {
 		BmiProp bmiProp = new BmiProp(0.0f, 64f);
+		bmiCalculator.calculate(bmiProp);		
+	}
+	
+	@Test(expectedExceptions = NullPointerException.class)
+	public void NullTest() throws NullPointerException, InvalidBmiPropException{
+		BmiProp bmiProp = new BmiProp((Float) null, 64f);
 		bmiCalculator.calculate(bmiProp);		
 	}
 	

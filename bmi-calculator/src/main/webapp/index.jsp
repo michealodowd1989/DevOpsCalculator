@@ -1,6 +1,6 @@
 <html>
 <body>
-	<h2>Welcome to Bmi Calculator</h2>
+	<h2>Bmi Calculator</h2>
 	<h3>
 		Written by
 		<%=java.lang.System.getProperty("user.name")%></h3>

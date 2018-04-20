@@ -9,7 +9,7 @@
 			<br>  
 			Weight in kgs<input type="text" name="weight">
 			<br>
-			<input type="submit">
+			<input type="submit"> 
 		</form>
 </body>
 </html>

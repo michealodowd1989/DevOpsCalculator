@@ -42,6 +42,12 @@ public class BmiCalculatorTest {
 	}
 	
 	
+	@Test(expectedExceptions = NullPointerException.class)
+	public void NullTest() throws NullPointerException, InvalidBmiPropException{
+		BmiProp bmiProp = new BmiProp((Float) null, 64f);
+		bmiCalculator.calculate(bmiProp);		
+	}
+	
 	
 	
 }

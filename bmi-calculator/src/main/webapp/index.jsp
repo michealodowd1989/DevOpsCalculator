@@ -1,6 +1,6 @@
 <html>
 <body>
-	<h2>Micheals Bmi Calculator test </h2>
+	<h2>Micheals Bmi Calculator changing header </h2>
 	<h3>
 		Written by
 		<%=java.lang.System.getProperty("user.name")%></h3>
